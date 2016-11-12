@@ -446,5 +446,8 @@ img, embed, object, video {
 }
 
 #contact-title {
+}
+
+#contact-link {
     color: firebrick;
 }
