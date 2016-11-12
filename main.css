@@ -16,7 +16,7 @@ img, embed, object, video {
     top: 0;
     z-index: 100;
     background-color: white;
-    width: 414px;
+    width: 500px;
 }
 
 #home-screen-right {
@@ -27,7 +27,7 @@ img, embed, object, video {
 
 .home-screen-section {
     width: 100%;
-    width: 414px;
+    width: 500px;
 }
 
 .home-profile-pic {
@@ -368,6 +368,8 @@ img, embed, object, video {
     height: 100px;
     max-height: 100px;
     background-color: black;
+    max-width: 500px;
+    width: 500px;
 }
 
 #home-screen-section-footer {
@@ -405,9 +407,9 @@ img, embed, object, video {
 }
 
 .home-screen {
-    max-width: 414px;
+    max-width: 500px;
     max-height: 20000px;
-    width: 414px;
+    width: 500px;
     height: 2500px;
 }
 
