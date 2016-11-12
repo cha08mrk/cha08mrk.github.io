@@ -156,7 +156,7 @@ $(window).on("load",function() {
     $(".hideme").each(function() {
     /* Check the location of each desired element */
     var objectBottom = $(this).offset().top + $(this).outerHeight();
-    var objectBottom = objectBottom - (objectBottom * 0.1);
+    var objectBottom = objectBottom - (objectBottom * 0.2);
 
     var windowBottom = $(window).scrollTop() + $(window).innerHeight();
 
