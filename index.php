@@ -74,13 +74,13 @@
                         <li class="home-navigation-list-item" id="social-media">
                             <div class="social_media_container">
                                 <div class="social_media__individual" id="twitter">
-                                    <a href="https://twitter.com/Koppars/" target="_blank"><img class="social_media_image" src="images/Icons/twitter.jpg" height="42" width="42"></a>
+                                    <a href="https://twitter.com/Koppars/" target="_blank"><img class="social_media_image" src="Images/Icons/twitter.jpg" height="42" width="42"></a>
                                 </div>
                                 <div class="social_media__individual" id="instagram">
-                                    <a href="https://www.instagram.com/kopparz" target="_blank"><img class="social_media_image" src="images/Icons/instagram.jpg" height="42" width="42"></a>
+                                    <a href="https://www.instagram.com/kopparz" target="_blank"><img class="social_media_image" src="Images/Icons/instagram.jpg" height="42" width="42"></a>
                                 </div>
                                 <div class="social_media__individual" id="linked_in">
-                                    <a href="https://www.linkedin.com/in/matthew-killeen-78708191?trk=nav_responsive_tab_profile" target="_blank"><img class="social_media_image" src="images/Icons/linked_in.jpg" height="42" width="42"></a>
+                                    <a href="https://www.linkedin.com/in/matthew-killeen-78708191?trk=nav_responsive_tab_profile" target="_blank"><img class="social_media_image" src="Images/Icons/linked_in.jpg" height="42" width="42"></a>
                                 </div>
                             </div>                        
                         </li>
@@ -103,7 +103,7 @@
             <div class="home-screen-section" id="contact">
                 <div class="contact_container">
                     <h1 class="title">Get In Touch</h1>
-                    <p class="contact-text">If you'd like to get in touch about a potential project please don't hesitate to contact with me using the form below, or email me at: </p>
+                    <p class="contact-text">If you'd like to get in touch about a potential project please don't hesitate to contact me using the form below, or email me at: </p>
                     <h2 class="contact-email">matthewkilleen89@gmail.com</h2>
                     <form id="contactForm" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
                         <div class=form-container>
