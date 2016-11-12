@@ -88,13 +88,13 @@
                     
                     <ul class="home-navigation-list">
                         <li class="home-navigation-list-item">
-                            <a class="home-navigation-link" href="#portfolio">Portfolio</a>
+                            <a class="home-navigation-link" id="portfolio-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="home-navigation-list-item">
-                            <a class="home-navigation-link" href="#contact">Contact</a>
+                            <a class="home-navigation-link" id="contact-link" href="#contact">Contact</a>
                         </li>
                         <li class="home-navigation-list-item">    
-                            <a class="home-navigation-link" href="#about">About</a>
+                            <a class="home-navigation-link" id="about-link" href="#about">About</a>
                         </li>
                     </ul>
                 </div>
@@ -102,7 +102,7 @@
             
             <div class="home-screen-section" id="contact">
                 <div class="contact_container">
-                    <h1 class="title">Get In Touch</h1>
+                    <h1 class="title" id="contact-title">Get In Touch</h1>
                     <p class="contact-text">If you'd like to get in touch about a potential project please don't hesitate to contact me using the form below, or email me at: </p>
                     <h2 class="contact-email">matthewkilleen89@gmail.com</h2>
                     <form id="contactForm" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
@@ -120,7 +120,7 @@
             
             <!--    About      -->
             <div class="home-screen-section" id="about">
-                <h1 class="title hideme">About Me</h1>
+                <h1 class="title hideme" id="about-title">About Me</h1>
                 <div class="about-me-container">
                     <p class="about-me-text hideme">I am a freelance developer based in Sheffield, UK.  I have several years' experience working as a software developer in Leeds, working mainly with Java and SQL.  I am also working towards completing a PhD in computational modelling.  I am now a web developer, and am constantly enjoying learning new skills.  I am confident working with: </p>
                     <div class="skills-list-container hideme" id="left-skills">

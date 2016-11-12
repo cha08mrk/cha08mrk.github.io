@@ -170,4 +170,26 @@ $(window).on("load",function() {
             }
         });
     }); $(window).scroll(); //invoke scroll-handler on page-load
+    
+    var scroll_pos = 0;
+    $(document).scroll(function() { 
+        scroll_pos = $(this).scrollTop();
+        
+        console.log(scroll_pos);
+        console.log(scroll_pos-($(window).height()/2));
+        console.log($('#contact-title').offset().top + $('#contact-title').outerHeight());
+        console.log($('#about-title').offset().top + $('#about-title').outerHeight());
+                
+        if ($('#contact-title').offset().top - $('#contact-title').outerHeight()<scroll_pos+($(window).height()/2)) {
+            $('#contact-link').css('color', 'firebrick');
+            $('#about-link').css('color', 'black');
+            $('#portfolio-link').css('color', 'black');
+        }
+        
+        if ($('#about-title').offset().top - $('#about-title').outerHeight()<scroll_pos+($(window).height()/2)) {
+            $('#about-link').css('color', 'firebrick');
+            $('#contact-link').css('color', 'black');
+            $('#portfolio-link').css('color', 'black');
+        }
+    });
 });

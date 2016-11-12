@@ -303,6 +303,7 @@ img, embed, object, video {
 }
 
 .signature {
+    color: firebrick;
     margin-top: 5%;
     font-size: 1.4em;
     font-family: "Cormorant Garamond", sans-serif;
@@ -442,4 +443,8 @@ img, embed, object, video {
 
 .contact-text {
     margin-right: 5%;
+}
+
+#contact-title {
+    color: firebrick;
 }
