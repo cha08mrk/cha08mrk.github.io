@@ -35,7 +35,7 @@ img, embed, object, video {
     margin-top: 1%;
     float: left;
     border-radius: 50%;
-    width: 100%;
+    width: 90%;
 }
 
 .home-screen-container {
@@ -303,7 +303,8 @@ img, embed, object, video {
 }
 
 .signature {
-    font-size: 18px;
+    margin-top: 5%;
+    font-size: 1.4em;
     font-family: "Cormorant Garamond", sans-serif;
 }
 
