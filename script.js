@@ -16,12 +16,8 @@ $(document).ready(function(){
         $(this).children("*").fadeTo(10,0);
     });
     
-    
-    //calculate 20% as this is the height of the nav bar in mobile mode
-    var bheight = $(window).height();
-    var percent = 0.2;
-    var hpercent = bheight * percent;
-    
+    //add on the outer height of the nav bar    
+    var objectBottom = $('#home-screen-left').outerHeight();    
     //scrolls down the page to the correct section!
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -29,7 +25,7 @@ $(document).ready(function(){
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
               $('html, body').animate({
-                scrollTop: target.offset().top -hpercent
+                scrollTop: target.offset().top - objectBottom
               }, 1000);
               return false;
             }
