@@ -17,7 +17,7 @@ img, embed, object, video {
     top: 0;
     z-index: 100;
     background-color: white;
-    width: 99%;
+    height: 20%;
 }
 
 #home-screen-right {
@@ -461,4 +461,8 @@ img, embed, object, video {
 .footer-signature-container {
     float: left;
     width: 50%;
+}
+
+#second-line {
+    font-size: 1em;
 }
