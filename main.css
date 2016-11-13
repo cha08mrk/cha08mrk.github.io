@@ -490,6 +490,7 @@ img, embed, object, video {
         background-color: white;    
         width: 33%;
         height: 100%;
+        min-width: 255px;
     }
 
     #contact {
