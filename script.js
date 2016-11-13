@@ -1,8 +1,8 @@
 $(document).ready(function(){
     
     //fade in title text
-    $(".landing-page-title").fadeTo(1000,1);
-    $(".landing-page-link").fadeTo(1000,1);
+    $(".landing-page-title").fadeTo(5000,1);
+    $(".landing-page-link").fadeTo(5000,1);
     
     //highlight on hover
     $(".portfolio-large-cover").hover(function() {
