@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -18,12 +19,23 @@
     <body>
         
         <div class="home-screen">
+            
+            <div class="landing-page" id="landing-page">
+                <div class="landing-page-content" >
+                    <h1 class="landing-page-title">Matthew Killeen</h1>
+                    <h2 class="landing-page-title" id="second">Freelance Web Developer and Web Designer</h2>
+                    <a class="landing-page-link" href="#about">Read More</a>
+                </div>
+            </div>
+            
             <!--   left hand section      -->
             <div class="home-screen-section" id="home-screen-left">
                 <div class="home-screen-container">                    
                     <ul class="home-navigation-list" id="nav-signature">
                         <li class="home-navigation-list-item" id="profile-pic">
-                            <img class="home-profile-pic" src="Images/Icons/profile_pic.jpg">
+                            <a href="#landing-page">
+                                <img class="home-profile-pic" src="Images/Icons/profile_pic.jpg">
+                            </a>
                         </li>
                         <li class="home-navigation-list-item" id="signature-name">
                             <h2 class="signature">Matthew Killeen</h2>
@@ -72,7 +84,7 @@
                     <input class="form-entry" type="text" name="email" id="email" placeholder="Email Address*">
                     <input class="form-entry" type="number" name="number" id="number" placeholder="Number*">
                     <input class="form-entry" type="text" name="website" id="website" placeholder="Website">
-                    <textarea class="form-text-entry" autofocustype="text" id="message" name="message" placeholder="Message"></textarea>
+                    <textarea class="form-text-entry" autofocustype="text" id="message" name="message" placeholder="Message*"></textarea>
                     <input class="form-submit" type="submit" />
                 </div>
             </form>
