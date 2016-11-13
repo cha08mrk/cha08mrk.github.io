@@ -14,6 +14,31 @@ img, embed, object, video {
 
 @media only screen and (max-device-width : 650px) {
     
+    .landing-page {
+        margin-top: 37%;
+        height: 63vh;
+    }
+
+    .landing-page-content {
+        margin-top: 40vh;
+    }
+
+    .landing-page-title {
+        font-family: "Roboto Slab", sans-serif;
+        opacity: 0; 
+    }
+
+    #second {
+        margin-bottom: 5%;
+    }
+
+    .landing-page-link {
+        text-decoration: none;
+        font-family: "roboto slab", sans-serif;
+        color: black;
+        opacity: 0;
+    }    
+    
     #home-screen-left {
         position: fixed;
         top: 0;
@@ -210,7 +235,6 @@ img, embed, object, video {
     }
 
     #contact {    
-        margin-top: 37%;
         height: auto;
     }
 
@@ -439,10 +463,6 @@ img, embed, object, video {
         margin-right: 5%;
     }
 
-    #contact-link {
-        color: firebrick;
-    }
-
     .footer-signature {
         text-align: left;
         color: white;
@@ -486,7 +506,7 @@ img, embed, object, video {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 100;
+        z-index: 1;
         background-color: white;    
         width: 33%;
         height: 100%;
@@ -497,6 +517,7 @@ img, embed, object, video {
         float: right;
         width: 66%;
         margin-top: 5%;    
+        min-width: 500px;
     }
 
     #about {
@@ -528,6 +549,7 @@ img, embed, object, video {
         margin-top: 5%;
         font-size: 1.2em;
         font-family: "Cormorant Garamond", sans-serif;    
+        color: firebrick;
     }
 
     #social-media {
@@ -558,6 +580,7 @@ img, embed, object, video {
         clear: both;
         overflow:auto;
         float: right;
+        min-width: 500px;
     }
 
     .form-entry {
@@ -672,7 +695,7 @@ img, embed, object, video {
     }
 
     .footer-social_media_container {
-        width: 25%;
+        width: 15%;
         float: right;
         margin-top: 2%;
     }
@@ -682,7 +705,30 @@ img, embed, object, video {
         float: left;
     }
 
-    #contact-link {
-        color: firebrick;
+    .landing-page {
+        height: 100vh;
+        width: 66%;
+        z-index: 10;
+        float: right;
+    }
+
+    .landing-page-title {
+        font-family: "Roboto Slab", sans-serif;
+        opacity: 0; 
+    }
+
+    .landing-page-content {
+        margin-top: 35vh;
+    }
+
+    .landing-page-link {
+        text-decoration: none;
+        font-family: "roboto slab", sans-serif;
+        color: black;
+        opacity: 0;
+    }
+
+    #second {
+        margin-bottom: 5%;
     }
 }

@@ -1,5 +1,9 @@
 $(document).ready(function(){
     
+    //fade in title text
+    $(".landing-page-title").fadeTo(1000,1);
+    $(".landing-page-link").fadeTo(1000,1);
+    
     //highlight on hover
     $(".portfolio-large-cover").hover(function() {
         $(this).fadeTo(500,1)
@@ -166,6 +170,8 @@ $(document).ready(function(){
 });
 
 $(window).on("load",function() {
+    
+    //on scroll check to see if image is visible, if it is fade in/out
     $(window).scroll(function() {
         $(".hideme").each(function() {
         /* Check the location of each desired element */
@@ -186,21 +192,32 @@ $(window).on("load",function() {
         });
     }); $(window).scroll(); //invoke scroll-handler on page-load
     
+    //change the color of title depending on where we are
     var scroll_pos = 0;
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
+        
+        //if the title goes over half the window height then change highlighted section
+        if ($('.landing-page-link').offset().top - $('.landing-page-link').outerHeight()<scroll_pos+($(window).height()/2)) {
+            $('#contact-link').css('color', 'black');
+            $('#about-link').css('color', 'black');
+            $('#portfolio-link').css('color', 'black');
+            $('.signature').css('color', 'firebrick');
+        }
         
         //if the title goes over half the window height then change highlighted section
         if ($('#contact-title').offset().top - $('#contact-title').outerHeight()<scroll_pos+($(window).height()/2)) {
             $('#contact-link').css('color', 'firebrick');
             $('#about-link').css('color', 'black');
             $('#portfolio-link').css('color', 'black');
+            $('.signature').css('color', 'black');
         }
         
         if ($('#about-title').offset().top - $('#about-title').outerHeight()<scroll_pos+($(window).height()/2)) {
             $('#about-link').css('color', 'firebrick');
             $('#contact-link').css('color', 'black');
             $('#portfolio-link').css('color', 'black');
+            $('.signature').css('color', 'black');
         }
     });
 });
