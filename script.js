@@ -205,6 +205,13 @@ $(window).on("load",function() {
             $('.signature').css('color', 'firebrick');
         }
         
+        if ($('#portfolio-title').offset().top - $('#portfolio-title').outerHeight()<scroll_pos+($(window).height()/2)) {
+            $('#about-link').css('color', 'black');
+            $('#contact-link').css('color', 'black');
+            $('#portfolio-link').css('color', 'firebrick');
+            $('.signature').css('color', 'black');
+        }
+        
         //if the title goes over half the window height then change highlighted section
         if ($('#contact-title').offset().top - $('#contact-title').outerHeight()<scroll_pos+($(window).height()/2)) {
             $('#contact-link').css('color', 'firebrick');

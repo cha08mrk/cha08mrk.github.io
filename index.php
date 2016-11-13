@@ -112,6 +112,18 @@
                 </div>
             </div>
             
+            <div class="home-screen-section" id="portfolio">
+                <h1 class="title" id="portfolio-title">Portfolio</h1>
+                <div class="portfolio-image-row">
+                    <img class="portfolio-image-large" src="Images/Portfolio/cup-of-coffee-1280537.jpg">
+                    <img class="portfolio-image-large" src="Images/Portfolio/background.jpg">
+                </div>
+                <div class="portfolio-image-row">
+                    <img class="portfolio-image-large" src="Images/Portfolio/cup-of-coffee-1280537.jpg">
+                    <img class="portfolio-image-large" src="Images/Portfolio/background.jpg">
+                </div>
+            </div>
+            
             <div class="home-screen-section" id="contact">
                 <div class="contact_container">
                     <h1 class="title" id="contact-title">Get In Touch</h1>
@@ -135,7 +147,7 @@
             <div class="home-screen-section" id="about">
                 <h1 class="title hideme" id="about-title">About Me</h1>
                 <div class="about-me-container">
-                    <p class="about-me-text hideme">I am a freelance developer based in Sheffield, UK.  I have several years' experience working as a software developer in Leeds, working mainly with Java and SQL.  I am also working towards completing a PhD in computational modelling.  I am now a web developer, and am constantly enjoying learning new skills.  I am confident working with: </p>
+                    <p class="about-me-text hideme">I am a freelance developer based in Sheffield, UK.  I have been working in software since 2012. I initially worked as a software developer in Leeds, working mainly with Java and SQL.  I am also working towards completing a PhD in computational modelling.  I am now a web developer, and am constantly enjoying learning new skills.  I am confident working with: </p>
                     <div class="skills-list-container hideme" id="left-skills">
                         <ul class="skills-list">
                             <li class="skills-list-item">

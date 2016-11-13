@@ -18,6 +18,20 @@ img, embed, object, video {
         margin-top: 37%;
         height: 63vh;
     }
+    
+    #portfolio {
+        width: 100%;
+    }
+
+    .portfolio-image-row {
+        width: 100%;    
+        margin: 0;
+        padding: 0;
+    }
+
+    .portfolio-image-large {
+        width: 100%;
+    }
 
     .landing-page-content {
         margin-top: 40vh;
@@ -127,9 +141,9 @@ img, embed, object, video {
     }
 
     .portfolio {
-        width: 100%;
-        height: 95%;
-        margin-top: 2%;
+        float: right;
+        width: 66%;
+        margin-top: 5%;   
     }
 
     .portfolio-large {
@@ -731,4 +745,21 @@ img, embed, object, video {
     #second {
         margin-bottom: 5%;
     }
+    
+    .portfolio-image-row {
+        width: 100%;
+    }
+
+    .portfolio-image-large {
+        width: 50%;
+        float: left;
+    }
+
+    #portfolio {
+        width: 66%;
+        float: right;
+    }
 }
+
+
+
