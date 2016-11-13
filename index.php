@@ -86,14 +86,14 @@
                         </li>
                     </ul>
                     
-                    <ul class="home-navigation-list">
-                        <li class="home-navigation-list-item">
+                    <ul class="home-navigation-list" id="bottom">
+                        <li class="home-navigation-list-item-links">
                             <a class="home-navigation-link" id="portfolio-link" href="#portfolio">Portfolio</a>
                         </li>
-                        <li class="home-navigation-list-item">
+                        <li class="home-navigation-list-item-links">
                             <a class="home-navigation-link" id="contact-link" href="#contact">Contact</a>
                         </li>
-                        <li class="home-navigation-list-item">    
+                        <li class="home-navigation-list-item-links">    
                             <a class="home-navigation-link" id="about-link" href="#about">About</a>
                         </li>
                     </ul>
@@ -147,11 +147,11 @@
                     <div class="skills-container">
                         <div class="skills-section hideme" id="design">
                             <h3 class="skills-title">Design</h3>
-                            <p>This is a paragraph about design. I can do it well. Some more things to say go here! More words and things about things that make this seem useful.</p>
+                            <p>Your website is uniquely designed to make your idea a reality. I create each site individually to match your needs, making it original, maintanable and scalable.</p>
                         </div>
                         <div class="skills-section hideme" id="development">
                             <h3 class="skills-title">Developmet</h3>
-                            <p>This is a paragraph about development. I can do it well. Some more things to say go here! More words and things about things that make this seem useful</p>
+                            <p>I develop custom sites to give a great user experience.  It will be efficient and engaging, and will be tested across a whole range of devices and browsers to give the best possible interface. </p>
                         </div>
                         <div class="skills-section hideme" id="seo">
                             <h3 class="skills-title">SEO</h3>
@@ -159,7 +159,7 @@
                         </div>
                         <div class="skills-section hideme" id="mobile">
                             <h3 class="skills-title">Responsive Web Design</h3>
-                            <p>Due to the increasing use of mobile devices to access your content there is a greater importance than ever on having a responsive design. This means your site will work on all sizes of device. Check out the mobile version of this site for an example!</p>
+                            <p>Due to the increasing use of mobile devices to access your content, there is a greater importance than ever on having a responsive design. This means your site will work on all sizes of device. Check out the mobile version of this site for an example!</p>
                         </div>
                         <div class="skills-section hideme" id="ecommerece">
                             <h3 class="skills-title">eCommerce</h3>

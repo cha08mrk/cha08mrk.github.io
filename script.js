@@ -16,8 +16,13 @@ $(document).ready(function(){
         $(this).children("*").fadeTo(10,0);
     });
     
-    //add on the outer height of the nav bar    
-    var objectBottom = $('#home-screen-left').outerHeight();    
+    //add on the outer height of the nav bar if on a 
+    var objectBottom = 0;
+    
+    if ($(window).width() < 650){
+         objectBottom += $('#home-screen-left').outerHeight();
+    }
+    
     //scrolls down the page to the correct section!
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -148,12 +153,14 @@ $(document).ready(function(){
         });
     };
     
-    //get the height of the body, - the nav bar and the footer and scroll the top bar from there
-    console.log($('body').outerHeight());
-    console.log($('#home-screen-left').outerHeight());
-    console.log($('.footer').outerHeight());    
-    console.log($('body').outerHeight() + $("#home-screen-left").outerHeight() - $(".footer").outerHeight());
-    var followHeight = $('body').outerHeight() - $("#home-screen-left").outerHeight() - $(".footer").outerHeight();
+    //if we're on small screen get the height of the body, - the nav bar and the footer and scroll the top bar from there
+    //on a big screen, just get the body height and take off the footer height
+    if ($(window).width() < 650){
+        var followHeight = $('body').outerHeight() - $("#home-screen-left").outerHeight() - $(".footer").outerHeight();    
+    } else {
+        var followHeight = $('body').outerHeight() - $(".footer").outerHeight();  
+    }
+    
     $('#home-screen-left').followTo(followHeight);
     
 });
@@ -182,7 +189,8 @@ $(window).on("load",function() {
     var scroll_pos = 0;
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
-                
+        
+        //if the title goes over half the window height then change highlighted section
         if ($('#contact-title').offset().top - $('#contact-title').outerHeight()<scroll_pos+($(window).height()/2)) {
             $('#contact-link').css('color', 'firebrick');
             $('#about-link').css('color', 'black');
