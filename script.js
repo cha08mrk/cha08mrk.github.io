@@ -131,7 +131,8 @@ $(document).ready(function(){
     $.fn.followTo = function ( pos ) {
         var $this = this,
             $window = $(windw);
-
+        pos = pos - $(window.top).height();
+        
         $window.scroll(function(e){
             if ($window.scrollTop() > pos) {
                 $this.css({
@@ -147,26 +148,33 @@ $(document).ready(function(){
         });
     };
     
-    $('#home-screen-left').followTo(1950);
+    //get the height of the body, - the nav bar and the footer and scroll the top bar from there
+    console.log($('body').outerHeight());
+    console.log($('#home-screen-left').outerHeight());
+    console.log($('.footer').outerHeight());    
+    console.log($('body').outerHeight() + $("#home-screen-left").outerHeight() - $(".footer").outerHeight());
+    var followHeight = $('body').outerHeight() - $("#home-screen-left").outerHeight() - $(".footer").outerHeight();
+    $('#home-screen-left').followTo(followHeight);
     
 });
 
 $(window).on("load",function() {
     $(window).scroll(function() {
-    $(".hideme").each(function() {
-    /* Check the location of each desired element */
-    var objectBottom = $(this).offset().top + $(this).outerHeight();
-    var objectBottom = objectBottom - (objectBottom * 0.2);
+        $(".hideme").each(function() {
+        /* Check the location of each desired element */
+        var objectBottom = $(this).offset().top + $(this).outerHeight();
+        var objectBottom = objectBottom - (objectBottom * 0.2);
 
-    var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+        var windowBottom = $(window).scrollTop() + $(window).innerHeight();
 
-    /* If the element is completely within bounds of the window, fade it in */
-    if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {
-            $(this).fadeTo(500,1);}
-        } else { //object goes out of view (scrolling up)
-            if ($(this).css("opacity")==1) {
-                $(this).fadeTo(500,0);}
+        /* If the element is completely within bounds of the window, fade it in */
+        if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+            if ($(this).css("opacity")==0) {
+                $(this).fadeTo(500,1);}
+            } else { //object goes out of view (scrolling up)
+                if ($(this).css("opacity")==1) {
+                    $(this).fadeTo(500,0);
+                }
             }
         });
     }); $(window).scroll(); //invoke scroll-handler on page-load
@@ -174,11 +182,6 @@ $(window).on("load",function() {
     var scroll_pos = 0;
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
-        
-        console.log(scroll_pos);
-        console.log(scroll_pos-($(window).height()/2));
-        console.log($('#contact-title').offset().top + $('#contact-title').outerHeight());
-        console.log($('#about-title').offset().top + $('#about-title').outerHeight());
                 
         if ($('#contact-title').offset().top - $('#contact-title').outerHeight()<scroll_pos+($(window).height()/2)) {
             $('#contact-link').css('color', 'firebrick');
