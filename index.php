@@ -67,6 +67,13 @@
         
         <div class="home-screen">
             
+            <div class="homepage-hero-module">
+                <video autoplay loop class="fillWidth">
+                    <source src="Videos/MP4/White-Keyboard.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+<!--                        <source src="Videos/WEBM/White-Keyboard.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.-->
+                </video>
+            </div>
+            
             <!--landing page-->
             <div class="landing-page" id="landing-page">
                 <div class="landing-page-content" >

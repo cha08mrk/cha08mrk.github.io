@@ -514,3 +514,18 @@ img, embed, object, video {
 #landing-page-together {
     margin-left: 4%;
 }
+
+.homepage-hero-module {
+    width: 100%;
+    max-height: 100vh;
+    position: absolute;
+    top: 25vh;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fillWidth {
+    overflow: hidden;
+    object-fit: cover;
+}

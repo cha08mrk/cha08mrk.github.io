@@ -25,6 +25,7 @@ img, embed, object, video {
     width: 33%;
     height: 100%;
     min-width: 255px;
+    background-color: rgba(255, 255, 255, 0.0);
 }
 
 .hideme{
@@ -66,8 +67,7 @@ img, embed, object, video {
 .signature {        
     margin-top: 5%;
     font-size: 1.2em;
-    font-family: "Cormorant Garamond", sans-serif;    
-    color: firebrick;
+    font-family: "Cormorant Garamond", sans-serif;
 }
 
 #social-media {
@@ -232,7 +232,7 @@ img, embed, object, video {
 
 .landing-page-title {
     font-family: "Roboto Slab", sans-serif;
-    opacity: 0; 
+    opacity: 0;
 }
 
 .landing-page-content {
@@ -272,4 +272,28 @@ img, embed, object, video {
 
 #landing-page-read-more {
     margin-left: 2%;
+}
+
+.homepage-hero-module {
+    width: 100%;
+    max-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fillWidth {
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.video-container {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.hidden {
+    display: none;
 }

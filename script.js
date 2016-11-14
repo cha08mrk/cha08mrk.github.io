@@ -202,7 +202,7 @@ $(window).on("load",function() {
             $('#contact-link').css('color', 'black');
             $('#about-link').css('color', 'black');
             $('#portfolio-link').css('color', 'black');
-            $('.signature').css('color', 'firebrick');
+            $('.signature').css('color', 'black');
         }
         
         if ($('#portfolio-title').offset().top - $('#portfolio-title').outerHeight()<scroll_pos+($(window).height()/2)) {
