@@ -1,0 +1,275 @@
+
+*{
+    margin:0;
+    padding:0;
+    font-family: poppins, sans-serif;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
+.home-screen {
+    overflow: auto;
+}
+
+#home-screen-left {    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;    
+    width: 33%;
+    height: 100%;
+    min-width: 255px;
+}
+
+.hideme{
+    opacity: 0;
+}
+
+#contact {
+    float: right;
+    width: 66%;
+    margin-top: 5%;    
+    min-width: 500px;
+}
+
+#about {
+    height: auto;
+    clear: both;
+    overflow:auto;
+    width: 66%;
+    float: right;
+}
+
+.home-navigation-list {
+    width: 50%;
+    margin-left: 25%;
+    height: 50%;
+    height: 50%
+}
+
+.home-navigation-list-item-links{
+    list-style: none;
+    height: 33%;
+}
+
+.home-profile-pic {
+    border-radius: 50%;
+    width: 40%;
+}
+
+.signature {        
+    margin-top: 5%;
+    font-size: 1.2em;
+    font-family: "Cormorant Garamond", sans-serif;    
+    color: firebrick;
+}
+
+#social-media {
+}
+
+.social_media__individual {
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+}
+
+.home-navigation-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#second-line {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 10%;
+}
+
+#contactForm {
+    width: 66%;
+    height: auto;
+    clear: both;
+    overflow:auto;
+    float: right;
+    min-width: 500px;
+}
+
+.form-entry {
+    float: left;
+    width: 44%;
+    margin-top: 2%;
+    margin-left: 3%;
+    border: 1px solid grey;
+}
+
+.form-text-entry {
+    margin-top: 2%;
+    width: 89%;
+    float: left;
+    margin-left: 3%;
+    height: 180px;
+    text-align: left;
+    padding-left: 2%;
+    padding-top: 1%;
+    border: 1px solid grey;
+}
+
+.form-submit {
+    margin-top: 2%;
+    width: 10%;
+    background-color: white;
+    border: 2px solid firebrick;
+    border-radius: 20px;
+    float: right;
+    margin-right: 6%;
+    min-width: 70px;
+    min-height: 48px;
+}
+
+.about-me-container {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    clear: both;
+    overflow:auto;
+}
+
+.skills-list-container {
+    float: left;
+    width: 30%;
+    height: auto;
+    margin-top: 3%;
+    margin-bottom: 6%;
+}
+
+.skills-list-item {
+        list-style: none;
+        margin: 5% 0 5% 0;
+        color: firebrick;
+}
+
+.skills-section {
+    width: 45%;
+    height: auto;
+    float: left;
+    margin-bottom: 5%;
+    margin-left: 2%;
+}
+
+.skills-title {
+    color: firebrick;
+}
+
+#left-skills {
+    margin-left: 20%;
+}
+
+.about-me-text {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.home-screen-container {
+    height: 70%;
+    margin-top: 15vh;
+}
+
+.home-navigation-list-item {
+    list-style: none;
+    height: 33%;
+}
+
+#bottom {
+    margin-top: 5%;
+}
+
+.footer-signature-container {
+    float: left;
+    width: 50%;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    overflow: auto;
+}
+
+.footer-signature {
+    text-align: left;
+    color: white;
+    font-size: 1em;
+    font-family: "Cormorant Garamond", sans-serif;
+    line-height: 1.1;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-top: 2%;
+}
+
+.footer-social_media_container {
+    width: 10%;
+    float: right;
+    margin-top: 2%;
+}
+
+.footer-social-media-individual {
+    width: 30%;
+    float: left;
+}
+
+.landing-page {
+    height: 100vh;
+    width: 66%;
+    z-index: 10;
+    float: right;
+}
+
+.landing-page-title {
+    font-family: "Roboto Slab", sans-serif;
+    opacity: 0; 
+}
+
+.landing-page-content {
+    margin-top: 35vh;
+}
+
+.landing-page-link {
+    text-decoration: none;
+    font-family: "roboto slab", sans-serif;
+    color: black;
+    opacity: 0;
+    width: 50%;
+    text-align: center;
+}
+
+#second {
+    margin-bottom: 5%;
+}
+
+.portfolio-image-row {
+    width: 100%;
+}
+
+.portfolio-image-large {
+    width: 50%;
+    float: left;
+}
+
+#portfolio {
+    width: 66%;
+    float: right;
+}
+
+#landing-page-together {
+    margin-left: 2%;
+}
+
+#landing-page-read-more {
+    margin-left: 2%;
+}

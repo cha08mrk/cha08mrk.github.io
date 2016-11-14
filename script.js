@@ -4,15 +4,15 @@ $(document).ready(function(){
     $(".landing-page-title").fadeTo(5000,1);
     $(".landing-page-link").fadeTo(5000,1);
     
-    //highlight on hover
-    $(".portfolio-large-cover").hover(function() {
+    //on hover, fade in image on top
+    $(".fade-in-on-hover").hover(function() {
         $(this).fadeTo(500,1)
     }, function() {
         $(this).fadeTo(500,0)
     });
     
     //On hover of portfolio image, add check me text
-    $(".portfolio-small").hover (function () {
+    $(".check-me").hover (function () {
         //get the id and add hover
         $(this).children("*").fadeTo(10,1);
     }, function () {
@@ -20,9 +20,17 @@ $(document).ready(function(){
         $(this).children("*").fadeTo(10,0);
     });
     
-    //add on the outer height of the nav bar if on a 
-    var objectBottom = 0;
+    //on hover of smaller portfolio image, glow!
+    $(".glow").hover(function(event){
+        console.log("hover");
+        $(this).css("box-shadow", "0px 0px 40px white inset");
+    }, function () {
+        $(this).css("box-shadow", "0 0 0");
+    });
     
+    //scroll down the page to the correct section
+    //add on the outer height of the nav bar if on a small screen 
+    var objectBottom = 0;    
     if ($(window).width() < 650){
          objectBottom += $('#home-screen-left').outerHeight();
     }
@@ -39,13 +47,6 @@ $(document).ready(function(){
               return false;
             }
         }
-    });
-    
-    //on hover of smaller portfolio image, glow!
-    $(".portfolio-small").hover(function(event){
-        $(this).css("box-shadow", "0px 0px 40px white inset");
-    }, function () {
-        $(this).css("box-shadow", "0 0 0");
     });
     
     //validate the contact form and do some highlighting if stuff is wrong
@@ -113,6 +114,7 @@ $(document).ready(function(){
         }
     });
     
+    //check if string is alphanumeric (for names)
     function isAlphaNumeric(str) {
         var code, i, len;
 
@@ -127,6 +129,7 @@ $(document).ready(function(){
         return true;
     };
     
+    //check if string contains @ symbol (for emails)
     function isEmail(str){
         if (str.includes("@")){
             return true;
@@ -135,11 +138,10 @@ $(document).ready(function(){
         return false;
     }
     
-    //start scrolling the fixed section
     var windw = this;
     $.fn.followTo = function ( pos ) {
         var $this = this,
-            $window = $(windw);
+        $window = $(windw);
         pos = pos - $(window.top).height();
         
         $window.scroll(function(e){
@@ -157,16 +159,15 @@ $(document).ready(function(){
         });
     };
     
+    //start scrolling the fixed section when the footer comes in
     //if we're on small screen get the height of the body, - the nav bar and the footer and scroll the top bar from there
     //on a big screen, just get the body height and take off the footer height
     if ($(window).width() < 650){
         var followHeight = $('body').outerHeight() - $("#home-screen-left").outerHeight() - $(".footer").outerHeight();    
     } else {
         var followHeight = $('body').outerHeight() - $(".footer").outerHeight();  
-    }
-    
+    }    
     $('#home-screen-left').followTo(followHeight);
-    
 });
 
 $(window).on("load",function() {
@@ -176,11 +177,10 @@ $(window).on("load",function() {
         $(".hideme").each(function() {
         /* Check the location of each desired element */
         var objectBottom = $(this).offset().top + $(this).outerHeight();
-        var objectBottom = objectBottom - (objectBottom * 0.2);
-
+        var objectBottom = objectBottom - (objectBottom * 0.05);
         var windowBottom = $(window).scrollTop() + $(window).innerHeight();
 
-        /* If the element is completely within bounds of the window, fade it in */
+        // If the element is completely within bounds of the window, fade it in 
         if (objectBottom < windowBottom) { //object comes into view (scrolling down)
             if ($(this).css("opacity")==0) {
                 $(this).fadeTo(500,1);}

@@ -2,7 +2,12 @@
 <html>
     <head>
         <title>Matthew Killeen - Web Developer</title>
-        <link rel="stylesheet" href="main.css">
+        
+        <link rel="stylesheet" media="only screen and (max-width : 761px)" href="small.css">
+        <link rel="stylesheet" media="only screen and (min-width : 760px)" href="medium.css">
+        
+<!--        <link rel="stylesheet" href="main.css">-->
+        
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -62,15 +67,19 @@
         
         <div class="home-screen">
             
+            <!--landing page-->
             <div class="landing-page" id="landing-page">
                 <div class="landing-page-content" >
                     <h1 class="landing-page-title">Matthew Killeen</h1>
                     <h2 class="landing-page-title" id="second">Freelance Web Developer and Web Designer</h2>
-                    <a class="landing-page-link" href="#about">Read More</a>
+                    <div class="landing-page-links">
+                        <a class="landing-page-link"  id="landing-page-read-more" href="#about">Read more</a>
+                        <a class="landing-page-link" id="landing-page-together" href="#contact">Let's work together</a>
+                    </div>
                 </div>
             </div>
             
-            <!--   left hand section      -->
+            <!--navigation bar-->
             <div class="home-screen-section" id="home-screen-left">
                 <div class="home-screen-container">                    
                     <ul class="home-navigation-list" id="nav-signature">
@@ -112,18 +121,20 @@
                 </div>
             </div>
             
+            <!--Portfolio-->
             <div class="home-screen-section" id="portfolio">
                 <h1 class="title" id="portfolio-title">Portfolio</h1>
                 <div class="portfolio-image-row">
-                    <img class="portfolio-image-large" src="Images/Portfolio/cup-of-coffee-1280537.jpg">
-                    <img class="portfolio-image-large" src="Images/Portfolio/background.jpg">
+                    <img class="portfolio-image-large glow" src="Images/Portfolio/cup-of-coffee-1280537.jpg">
+                    <img class="portfolio-image-large glow" src="Images/Portfolio/background.jpg">
                 </div>
                 <div class="portfolio-image-row">
-                    <img class="portfolio-image-large" src="Images/Portfolio/cup-of-coffee-1280537.jpg">
-                    <img class="portfolio-image-large" src="Images/Portfolio/background.jpg">
+                    <img class="portfolio-image-large glow" src="Images/Portfolio/background.jpg">
+                    <img class="portfolio-image-large glow" src="Images/Portfolio/cup-of-coffee-1280537.jpg">                    
                 </div>
             </div>
             
+            <!--Contact-->
             <div class="home-screen-section" id="contact">
                 <div class="contact_container">
                     <h1 class="title" id="contact-title">Get In Touch</h1>
@@ -143,11 +154,11 @@
                 </div>
             </form>
             
-            <!--    About      -->
+            <!--About-->
             <div class="home-screen-section" id="about">
                 <h1 class="title hideme" id="about-title">About Me</h1>
                 <div class="about-me-container">
-                    <p class="about-me-text hideme">I am a freelance developer based in Sheffield, UK.  I have been working in software since 2012. I initially worked as a software developer in Leeds, working mainly with Java and SQL.  I am also working towards completing a PhD in computational modelling.  I am now a web developer, and am constantly enjoying learning new skills.  I am confident working with: </p>
+                    <p class="about-me-text hideme">I am a freelance developer based in Sheffield, UK.  I have been working in software since graduating in 2012. I initially worked as a software engineer in Leeds, working mainly with Java and SQL.  I am also working towards completing a PhD in computational modelling, and am now a web developer.  I am constantly enjoying learning new skills, and I am confident working with: </p>
                     <div class="skills-list-container hideme" id="left-skills">
                         <ul class="skills-list">
                             <li class="skills-list-item">
@@ -174,16 +185,16 @@
                             <p>Your website is uniquely designed to make your idea a reality. I create each site individually to match your needs, making it original, maintanable and scalable.</p>
                         </div>
                         <div class="skills-section hideme" id="development">
-                            <h3 class="skills-title">Developmet</h3>
+                            <h3 class="skills-title">Development</h3>
                             <p>I develop custom sites to give a great user experience.  It will be efficient and engaging, and will be tested across a whole range of devices and browsers to give the best possible interface. </p>
                         </div>
                         <div class="skills-section hideme" id="seo">
                             <h3 class="skills-title">SEO</h3>
-                            <p>Search engine optimisation is a powerful tool to help to drive the most possible traffic to your site.  I use industry standard techniques to provide organic SEO, meaning that you don't have to pay to have your site rank higher in search results.</p>
+                            <p>Search engine optimisation is a powerful tool to help to drive the most possible traffic to your site.  I use industry standard techniques to provide organic SEO, meaning that you don't have to pay extra to have your site rank higher in search results.</p>
                         </div>
                         <div class="skills-section hideme" id="mobile">
                             <h3 class="skills-title">Responsive Web Design</h3>
-                            <p>Due to the increasing use of mobile devices to access your content, there is a greater importance than ever on having a responsive design. This means your site will work on all sizes of device. Check out the mobile version of this site for an example!</p>
+                            <p>Due to the increasing use of mobile devices to access your content there is a greater importance than ever on having a responsive design. This means your site will respond in order to work on all sizes of device. Check out the mobile version of this site for an example!</p>
                         </div>
                         <div class="skills-section hideme" id="ecommerece">
                             <h3 class="skills-title">eCommerce</h3>
@@ -193,10 +204,19 @@
                             <h3 class="skills-title">Content Management</h3>
                             <p>This is a paragraph about content management. I can do it well. Some more things to say go here! More words and things about things that make this seem useful</p>
                         </div>
+                      <div class="skills-section hideme" id="advice">
+                            <h3 class="skills-title">Advice</h3>
+                            <p>I also offer advice on all kinds of services, such as hosting, domain names, spellchecking and copywriting.  If you have any questions, don't hesitate to ask.</p>
+                        </div>
+                      <div class="skills-section hideme" id="rate">
+                            <h3 class="skills-title">Rates</h3>
+                            <p>Whilst I am building up my client base, I am currently offering very competitive rates for my work.  In my free time, I also work pro-bono helping to build and maintain an internet presence for charitable organisations.</p>
+                        </div>
                     </div>
                 </div>                
             </div>
             
+            <!--Footer-->
             <div class="footer">
                 <div class="footer-signature-container">
                     <h2 class="footer-signature">Matthew Killeen <br>Freelance Developer</h2>
