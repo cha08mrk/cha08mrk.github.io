@@ -264,7 +264,7 @@ img, embed, object, video {
 #portfolio {
     width: 66%;
     float: right;
-    margin-top: 6%;
+    margin-top: 6vh;
 }
 
 #landing-page-together {
