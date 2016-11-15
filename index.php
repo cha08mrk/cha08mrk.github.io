@@ -5,6 +5,7 @@
         
         <link rel="stylesheet" media="only screen and (max-width : 761px)" href="small.css">
         <link rel="stylesheet" media="only screen and (min-width : 760px)" href="medium.css">
+        <link rel="shortcut icon" href="Images/Icons/title.ico" />
         
 <!--        <link rel="stylesheet" href="main.css">-->
         

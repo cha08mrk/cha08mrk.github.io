@@ -120,7 +120,8 @@ $(document).ready(function(){
 
         for (i = 0, len = str.length; i < len; i++) {
             code = str.charCodeAt(i);
-            if (!(code > 47 && code < 58) && // numeric (0-9)
+            if ((code != 32) &&  //space
+                !(code > 47 && code < 58) && // numeric (0-9)
                 !(code > 64 && code < 91) && // upper alpha (A-Z)
                 !(code > 96 && code < 123)) { // lower alpha (a-z)
               return false;
@@ -205,12 +206,12 @@ $(window).on("load",function() {
             $('.signature').css('color', 'black');
         }
         
-        if ($('#portfolio-title').offset().top - $('#portfolio-title').outerHeight()<scroll_pos+($(window).height()/2)) {
-            $('#about-link').css('color', 'black');
-            $('#contact-link').css('color', 'black');
-            $('#portfolio-link').css('color', 'firebrick');
-            $('.signature').css('color', 'black');
-        }
+//        if ($('#portfolio-title').offset().top - $('#portfolio-title').outerHeight()<scroll_pos+($(window).height()/2)) {
+//            $('#about-link').css('color', 'black');
+//            $('#contact-link').css('color', 'black');
+//            $('#portfolio-link').css('color', 'firebrick');
+//            $('.signature').css('color', 'black');
+//        }
         
         //if the title goes over half the window height then change highlighted section
         if ($('#contact-title').offset().top - $('#contact-title').outerHeight()<scroll_pos+($(window).height()/2)) {
