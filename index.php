@@ -149,7 +149,7 @@
                 <div class="contact_container">
                     <h1 class="title" id="contact-title">Get In Touch</h1>
                     <p class="contact-text">If you'd like to get in touch about a potential project please don't hesitate to contact me using the form below, or email me at: </p>
-                    <h2 class="contact-email">matthewkilleen89@gmail.com</h2>
+                    <h2 class="contact-email">info@matthewkilleen.me</h2>
                 </div>
             </div>
             
@@ -206,6 +206,7 @@
                             <h3 class="skills-title">Responsive Web Design</h3>
                             <p>Due to the increasing use of mobile devices to access your content there is a greater importance than ever on having a responsive design. This means your site will respond in order to work on all sizes of device. Check out the mobile version of this site for an example!</p>
                         </div>
+<!--
                         <div class="skills-section hideme" id="ecommerece">
                             <h3 class="skills-title">eCommerce</h3>
                             <p>This is a paragraph about eCommerce. I can do it well. Some more things to say go here! More words and things about things that make this seem useful</p>
@@ -214,6 +215,7 @@
                             <h3 class="skills-title">Content Management</h3>
                             <p>This is a paragraph about content management. I can do it well. Some more things to say go here! More words and things about things that make this seem useful</p>
                         </div>
+-->
                       <div class="skills-section hideme" id="advice">
                             <h3 class="skills-title">Advice</h3>
                             <p>I also offer advice on all kinds of services, such as hosting, domain names, spellchecking and copywriting.  If you have any questions, don't hesitate to ask.</p>
