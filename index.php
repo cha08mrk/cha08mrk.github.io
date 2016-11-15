@@ -157,7 +157,7 @@
                 <div class=form-container>
                     <input  class="form-entry" type="text" name="name" id="name" placeholder="Name*">
                     <input class="form-entry" type="text" name="email" id="email" placeholder="Email Address*">
-                    <input class="form-entry" type="number" name="number" id="number" placeholder="Number*">
+                    <input class="form-entry" type="text" name="number" id="number" placeholder="Number*">
                     <input class="form-entry" type="text" name="website" id="website" placeholder="Website">
                     <textarea class="form-text-entry" autofocustype="text" id="message" name="message" placeholder="Message*"></textarea>
                     <input class="form-submit" type="submit" />

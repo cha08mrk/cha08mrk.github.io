@@ -93,6 +93,10 @@ $(document).ready(function(){
             $("#number").css("border","1px solid firebrick");
             //stops the form reloading the page
             valid = false;
+        }  else if (!isPhoneNumber(telephone)){
+            $("#number").css("border","1px solid firebrick");
+            //stops the form reloading the page
+            valid = false;
         }  else {
             $("#number").css("border","1px solid grey");
         }
@@ -129,6 +133,20 @@ $(document).ready(function(){
         }
         return true;
     };
+    
+    function isPhoneNumber(str){
+        var code, i, len;
+        
+        for (i = 0, len = str.length; i < len; i++) {
+            code = str.charCodeAt(i);
+            if ((code != 32) &&  //space
+                !(code > 47 && code < 58) && // numeric (0-9)
+                (code != 43)){ // "+"
+              return false;
+            }
+        }
+        return true;
+    }
     
     //check if string contains @ symbol (for emails)
     function isEmail(str){
