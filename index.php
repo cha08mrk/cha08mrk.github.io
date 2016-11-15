@@ -53,12 +53,12 @@
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
             //This has been tested and works! Don't bother spamming myself for now.
-//            if(!$mail->send()) {
-//                //echo 'Message could not be sent.';
-//                //echo 'Mailer Error: ' . $mail->ErrorInfo;
-//            } else {
-//                //echo 'Message has been sent';
-//            }
+            if(!$mail->send()) {
+                //echo 'Message could not be sent.';
+                //echo 'Mailer Error: ' . $mail->ErrorInfo;
+            } else {
+                //echo 'Message has been sent';
+            }
         }?>
     
     </head>
@@ -129,6 +129,7 @@
             </div>
             
             <!--Portfolio-->
+<!--
             <div class="home-screen-section" id="portfolio">
                 <h1 class="title" id="portfolio-title">Portfolio</h1>
                 <div class="portfolio-image-row">
@@ -140,6 +141,7 @@
                     <img class="portfolio-image-large glow" src="Images/Portfolio/cup-of-coffee-1280537.jpg">                    
                 </div>
             </div>
+-->
             
             <!--Contact-->
             <div class="home-screen-section" id="contact">
